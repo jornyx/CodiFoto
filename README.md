@@ -5,7 +5,7 @@ Extensión traducida completamente al español
 ¡Toma capturas con estilo de tu código en VS Code! 
 ¡puedes resaltar la línea haciendo clic en el número de línea!.
 
-![UI](https://raw.githubusercontent.com/huibizhang/CodeSnap-plus/master/examples/ui.png)
+![UI](https://github.com/jornyx/CodiFoto/raw/main/examples/ui.png)
 
 ## Funciones
 
@@ -50,27 +50,27 @@ Si quieres resaltar la línea simplemente haz clic en el número de línea, y la
 
 Resaltado estilo: **Enfoque**
 
-![Hightlight-Style:Focus](https://raw.githubusercontent.com/huibizhang/CodeSnap-plus/master/examples/hightlight-focus.png)
+![Hightlight-Style:Focus](https://github.com/jornyx/CodiFoto/raw/main/examples/hightlight-focus.png)
 
 Resaltado estilo: **Git-Añadir**
 
-![Hightlight-Style:Focus](https://raw.githubusercontent.com/huibizhang/CodeSnap-plus/master/examples/hightlight-add.png)
+![Hightlight-Style:Focus](https://github.com/jornyx/CodiFoto/raw/main/examples/hightlight-add.png)
 
 Resaltado estilo: **Git-Eliminar**
 
-![Hightlight-Style:Focus](https://raw.githubusercontent.com/huibizhang/CodeSnap-plus/master/examples/hightlight-remove.png)
+![Hightlight-Style:Focus](https://github.com/jornyx/CodiFoto/raw/main/examples/hightlight-remove.png)
 
 [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme) + [Operator Mono](https://www.typography.com/fonts/operator/styles/operatormono)
 
-![Example 1](https://raw.githubusercontent.com/huibizhang/CodeSnap-plus/master/examples/material_operator-mono.png)
+![Example 1](https://github.com/jornyx/CodiFoto/raw/main/examples/material_operator-mono.png)
 
 [Nord](https://github.com/arcticicestudio/nord-visual-studio-code) + [Cascadia Code](https://github.com/microsoft/cascadia-code)
 
-![Example 2](https://raw.githubusercontent.com/huibizhang/CodeSnap-plus/master/examples/nord_cascadia-code.png)
+![Example 2](https://github.com/jornyx/CodiFoto/raw/main/examples/nord_cascadia-code.png)
 
 Monokai + [Fira Code](https://github.com/tonsky/FiraCode)
 
-![Example 3](https://raw.githubusercontent.com/huibizhang/CodeSnap-plus/master/examples/monokai_fira-code.png)
+![Example 3](https://github.com/jornyx/CodiFoto/raw/main/examples/monokai_fira-code.png)
 
 ## Configuración
 
