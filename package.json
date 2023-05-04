@@ -1,0 +1,150 @@
+{
+  "name": "codifoto",
+  "displayName": "CodiFoto",
+  "description": "Crea capturas de tu código con estilo.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jornyx/CodiFoto"
+  },
+  "publisher": "Jorny",
+  "icon": "icon.png",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "keywords": [
+    "captura",
+    "código",
+    "clipboard",
+    "compartir",
+    "codifoto"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:codiFoto.start"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codiFoto.start",
+        "title": "Iniciar CodiFoto"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "codiFoto.start"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "CodiFoto",
+      "properties": {
+        "codiFoto.colorDeFondo": {
+          "scope": "resource",
+          "type": "string",
+          "default": "#ffffff",
+          "description": "Color de fondo del contenedor"
+        },
+        "codiFoto.sombraCSS": {
+          "scope": "resource",
+          "type": "string",
+          "default": "3px 3px 5px rgba(0,0,0,0.69)",
+          "description": "Color y tamaño de la ventana"
+        },
+        "codiFoto.margenDeContenedor": {
+          "scope": "resource",
+          "type": "string",
+          "default": "0.5em",
+          "description": "Margen interno del contenedor"
+        },
+        "codiFoto.esquinasRedondeadas": {
+          "scope": "resource",
+          "type": "boolean",
+          "default": true,
+          "description": "Ventana con esquinas redondeadas"
+        },
+        "codiFoto.mostrarControlesDeVentana": {
+          "scope": "resource",
+          "type": "boolean",
+          "default": true,
+          "description": "Mostrar controles de ventana estilo OS X"
+        },
+        "codiFoto.mostrarTituloDeVentana": {
+          "scope": "resource",
+          "type": "boolean",
+          "default": false,
+          "description": "Mostrar el título de la ventana con el nombre del archivo abierto"
+        },
+        "codiFoto.mostrarNumerosDeLinea": {
+          "scope": "resource",
+          "type": "boolean",
+          "default": true,
+          "description": "Mostrar números de línea"
+        },
+        "codiFoto.usarNumeroDeLineaReal": {
+          "scope": "resource",
+          "type": "boolean",
+          "default": false,
+          "description": "Usar el número de línea de la selección en lugar de iniciar en 1"
+        },
+        "codiFoto.fondoTransparente": {
+          "scope": "resource",
+          "type": "boolean",
+          "default": false,
+          "description": "Realizar captura con fondo transparente"
+        },
+        "codiFoto.destino": {
+          "scope": "resource",
+          "type": "string",
+          "enum": [
+            "Contenedor",
+            "Ventana"
+          ],
+          "default": "Contenedor",
+          "description": "Tomar la captura con o sin el contenedor"
+        },
+        "codiFoto.accionDelBoton": {
+          "scope": "resource",
+          "type": "string",
+          "enum": [
+            "Guardar",
+            "Capturar"
+          ],
+          "default": "Capturar",
+          "description": "Acción del botón de captura"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.{js,jsx,md,json,css,prettierrc,eslintrc,html}\"",
+    "check:format": "prettier --check \"**/*.{js,jsx,md,json,css,prettierrc,eslintrc,html}\"",
+    "check": "npm run lint && npm run check:format",
+    "tw": "npx tailwindcss -i style.css -o ./webview/style.css --watch"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.40",
+    "@types/vscode": "^1.52.0",
+    "eslint": "^7.24.0",
+    "eslint-config-adpyke-es6": "^1.4.13",
+    "eslint-config-prettier": "^8.2.0",
+    "glob": "^7.1.6",
+    "mocha": "^10.2.0",
+    "prettier": "^2.2.1",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.2.4",
+    "vscode-test": "^1.5.2"
+  },
+  "dependencies": {
+    "dom-to-image-even-more": "^1.0.4"
+  }
+}

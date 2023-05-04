@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; img-src %CSP_SOURCE% data: https:; script-src %CSP_SOURCE%; style-src 'unsafe-inline' %CSP_SOURCE%;"
+    />
+    <title>CodiFoto</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="../node_modules/dom-to-image-even-more/dist/dom-to-image-more.min.js"
+      async
+    ></script>
+    <script src="./src/index.js" type="module"></script>
+  </head>
+
+  <body class="flex flex-col w-screen h-screen overflow-hidden pt-0">
+    <div class="flex-none w-full flex justify-center items-center py-3 space-x-5">
+      <!-- <div id="log">0</div> -->
+
+      <div id="leftPanel" class="flex justify-end flex-1 space-x-2">
+
+        <button id="showWindowControlsBtn" class="flex py-2 pr-4 pl-3 bg-gray-800 rounded-md hover:bg-gray-700 transition-all active:scale-95 items-center">
+          <div class="rounded bg-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 p-0.5 text-green-400 transition-all">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>    
+          </div>
+          <span class="ml-1.5">Controles de ventana</span>
+        </button>
+
+        <button id="showLineNumBtn" class="flex py-2 pr-4 pl-3 bg-gray-800 rounded-md hover:bg-gray-700 transition-all active:scale-95 items-center">
+          <div class="rounded bg-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 p-0.5 text-green-400 transition-all">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>    
+          </div>
+          <span class="ml-1.5">Números de línea</span>
+        </button>
+      </div>
+      
+      <div class="flex-none">
+        
+        
+      <svg 
+      id="save"
+      class="shutter hover:brightness-125 transition-all active:scale-90"
+      xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="67px" height="67px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 10374.31 10374.31"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#EC7A00}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M5187.17 0c2864.77,0 5187.14,2322.37 5187.14,5187.17 0,2864.77 -2322.37,5187.14 -5187.14,5187.14 -2864.8,0 -5187.17,-2322.37 -5187.17,-5187.14 0,-2864.8 2322.37,-5187.17 5187.17,-5187.17zm0 410.22c2638.22,0 4776.91,2138.7 4776.91,4776.95 0,2638.22 -2138.7,4776.91 -4776.91,4776.91 -2638.25,0 -4776.95,-2138.7 -4776.95,-4776.91 0,-2638.25 2138.7,-4776.95 4776.95,-4776.95z"/>
+  <path class="fil0" d="M1157.44 3645.59c500.24,-1306.62 1617.49,-2307.84 2995.45,-2646.98l914.01 1583.61c-814.03,36.96 -1530.67,447.13 -1983.13,1063.37l-1926.34 0z"/>
+  <path class="fil0" d="M4496.87 925.82c1381.79,-219.51 2807.3,248.07 3789.54,1272.26l-909.28 1572.87c-418.25,-645.47 -1114.06,-1094.36 -1918.44,-1177.58l-961.82 -1667.55z"/>
+  <path class="fil0" d="M1840.71 7912.27c-881.17,-1086.76 -1189.24,-2555.02 -793.6,-3917.83l1820.06 0.74c-183.94,357.27 -287.82,762.49 -287.82,1192 0,376.95 80.1,735.16 224.03,1058.71l-962.68 1666.39z"/>
+  <path class="fil0" d="M5860.47 9446.65c-1382.34,215.96 -2806.64,-255.28 -3786.25,-1282.01l915.03 -1573.44c415.49,649.05 1110.64,1101.77 1915.45,1188.47l955.77 1666.97z"/>
+  <path class="fil0" d="M9220.92 6714.99c-496.33,1308.12 -1610.58,2312.67 -2987.53,2655.92l-917.72 -1579.15c814.12,-39.51 1530.1,-452.41 1980.69,-1071.03l1924.56 -5.74z"/>
+  <path class="fil0" d="M4251.74 6786.04l1868.47 0c174.4,-72.27 237.57,-65.65 312.17,-239.33 56.37,-131.22 32.52,-385.87 32.52,-542.36l1.12 -1393.97c-2.1,-103.18 -7.95,-77.53 -110.6,-180.54 -178.34,-178.96 -693.64,-711.15 -842.09,-841.59l-1261.59 0c-163.65,68.24 -205.36,56.37 -287.57,192.75 -77.5,128.47 -57.12,270.38 -57.12,432.59l0 1932.88c0,155.66 -20.17,312.65 51.73,438.1 84.27,147.03 126.51,132.5 292.96,201.47zm1176.37 -2453.58l-1.5 -584.1c-349.64,1.16 -697,0.93 -1043.91,-0.05 -77.31,-0.23 -155.04,0.7 -210.99,41.28 -164.69,119.25 -106.51,400.65 -106.51,679.81 0,345.84 0,691.68 0,1037.53 0,1267.41 -155.73,1118.84 957.35,1118.84 335.89,0 706.47,14.97 1038.02,-0.08 329.15,-14.97 246.2,-412.71 246.2,-791.9 0,-351.46 2.13,-703.62 -0.32,-1054.97l-0.17 -151.04c-296.78,4.61 -676.72,67.98 -823.77,-192.05 -15.73,-27.82 -30.87,-77.31 -54.38,-103.28zm723.88 134.8l-566.33 -563.84c-3.6,193.07 -33.72,391.51 76.1,495.52 108.21,102.49 317.96,65.7 490.23,68.32z"/>
+  <path class="fil0" d="M4915.61 6168.97c246.67,3 169.67,45.59 371.47,-486.49 39.75,-104.81 182.96,-423.48 172.27,-515.66 -187.53,-11.14 -171.47,-24.33 -231.03,136.58 -69.32,187.27 -295.64,746.58 -312.71,865.58z"/>
+  <path class="fil0" d="M4278.64 5626.78l2.56 111.46c68.83,48.11 459.15,275.75 526.94,254.01l1.16 -193.67 -278.21 -130.1 274.41 -143.07 6.33 -180.65c-23.16,-12.42 25.61,-59.04 -133.47,32.41 -112.21,64.49 -354.13,159.43 -399.72,249.61z"/>
+  <path class="fil0" d="M5562.68 5339.08c-15.17,172.44 -23.44,177.88 98.5,234.25 59.59,27.56 121.77,63.34 183.74,81.6 -103.55,128.47 -301.66,66.28 -289.39,258.27l4.52 81.19c79.84,19.71 220.14,-81.66 290.51,-122.58 53.48,-31.1 92.98,-47.33 142.81,-73.18 70.1,-36.38 104.41,-44.73 101.15,-135.57 -4.18,-116.27 -328.67,-251.42 -446.84,-313.21l-85 -10.77z"/>
+ </g>
+</svg>
+      </div>
+
+      <div id="rightPanel" class="w-full flex-1 flex space-x-2">
+        <button id="secondMainBtn" class=" py-2 px-4 bg-gray-800 rounded-md hover:bg-gray-700 transition-all active:scale-95">
+          Copiar
+        </button>
+
+        <!--<button id="modeChangeBtn" class=" py-2 px-4 bg-gray-800 rounded-md hover:bg-gray-700 transition-all active:scale-95">
+          Nombre de archivo
+        </button>-->
+        <button id="modeChangeBtn" class="flex py-2 pr-4 pl-3 bg-gray-800 rounded-md hover:bg-gray-700 transition-all active:scale-95 items-center">
+          <div class="rounded bg-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 p-0.5 text-green-400 transition-all">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>    
+          </div>
+          <span class="ml-1.5">Nombre de archivo</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="flex-1 w-full overflow-auto flex justify-center p-0">
+      <!-- <div class="w-full p-3 flex space-x-2" id="fw-panel"> -->
+        <!-- <span id="fw-span" class="block p-2 bg-gray-800 rounded-md w-48 text-white">0px</span> -->
+        <!-- <input id="fw-input" class="p-2 bg-gray-800 rounded-md w-48" placeholder="Fixed Width (px)">
+        <button id="fw-btn" class="rounded-md p-2 bg-gray-600 hover:bg-gray-400 transition-all">clear</button> -->
+      <!-- </div> -->
+  
+      <div id="snippet-scroll">
+        <div id="snippet-container">
+          <div id="window">
+            <div id="navbar">
+              <div id="window-controls">
+                <div class="red dot"></div>
+                <div class="yellow dot"></div>
+                <div class="green dot"></div>
+              </div>
+              <div id="window-title"></div>
+            </div>
+            <div id="snippet"></div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="flash-fx"></div>
+
+    </div>
+  </body>
+</html>
