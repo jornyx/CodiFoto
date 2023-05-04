@@ -5,7 +5,7 @@ Extensión traducida completamente al español
 ¡Toma capturas con estilo de tu código en VS Code! 
 ¡puedes resaltar la línea haciendo clic en el número de línea!.
 
-![UI](https://raw.githubusercontent.com/huibizhang/CodeSnap-plus/master/examples/ui.png)
+![UI](https://github.com/jornyx/CodiFoto/raw/main/examples/ui.png)
 
 ## Funciones
 
